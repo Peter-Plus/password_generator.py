@@ -1,0 +1,13 @@
+import random
+
+def generate_password(length=12, include_symbols=True):
+ """生成一个安全的随机密码，可以自定义长度和是否包含符号。"""
+
+ characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+ if include_symbols:
+   characters += "!@#<span class="math-inline">%^&\*\(\)"
+password \= ""\.join\(random\.choice\(characters\) for i in range\(length\)\)
+return password
+\# 示例用法：
+strong\_password \= generate\_password\(length\=16\)
+print\(strong\_password\)  \# 输出示例：k54a8</span>%DhGf253j9
